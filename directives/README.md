@@ -5,8 +5,4 @@ Directives
 [Hide Parent Elm](hide-parent-element.js): Hide the parent element on click.<br>
 [Toggle Sibling Class](toggle-sibling-class.js): Toggle class on sibling elements on click.<br>
 
-[Form Field Equals](angular-equals.js): Compares two form fields.<br>
-```
-<input type="email" name="email" class="form-control" ng-model="person.EmailAddress" placeholder="Email" required oninvalid="this.setCustomValidity('Email is required, and must match.');">
-<input type="email" class="form-control" ng-model="emailConfirm" placeholder="Email Confirm" equals="{{person.EmailAddress}}" oninvalid="this.setCustomValidity('Email is required, and must match.');">
-```
+
