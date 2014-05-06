@@ -1,0 +1,12 @@
+		<!-- assumed that scope and controller are defined -->
+		
+		<div class="form-group">
+            <label class="control-label" > Check In: </label>
+            <input type="text" class="form-control date" readonly="true" ng-model="searchParams.fromDate" data-min-date="today" bs-datepicker required/>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" > Check Out: </label>
+            <!-- {{toMinDate}} is a scope var that is set on first load (used if you need to add to the from date) -->
+            <input type="text" class="form-control date" readonly="true" ng-model="searchParams.toDate" data-min-date="{{toMinDate}}" laterthan="{{searchParams.fromDate}}" bs-datepicker required />
+        </div>
